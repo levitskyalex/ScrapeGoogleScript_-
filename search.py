@@ -7,9 +7,12 @@ USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:65.0) Gecko/20100
 # mobile user-agent
 MOBILE_USER_AGENT = "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36"
 
-query = "hackernoon How To Scrape Google With Python"
+#query = "hackernoon How To Scrape Google With Python"
+query = "self care tracker"
 query = query.replace(' ', '+')
-URL = f"https://google.com/search?q={query}"
+#URL = f"https://google.com/search?q={query}"
+URL = f"https://play.google.com/store/search?q={query}"
+
 
 headers = {"user-agent": USER_AGENT}
 resp = requests.get(URL, headers=headers)
